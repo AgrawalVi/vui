@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:tailkits.com)",
+      "WebFetch(domain:ui.shadcn.com)",
+      "Bash(pnpm --version)",
+      "Bash(npx --version)",
+      "Skill(shadcn)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//private/tmp/**)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:api.github.com)"
+    ]
+  }
+}
