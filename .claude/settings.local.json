@@ -12,7 +12,8 @@
       "Read(//private/tmp/**)",
       "Bash(gh api:*)",
       "WebFetch(domain:api.github.com)",
-      "Bash(pnpm registry:build:*)"
+      "Bash(pnpm registry:build:*)",
+      "WebFetch(domain:vui.vishrut.tech)"
     ]
   }
 }
