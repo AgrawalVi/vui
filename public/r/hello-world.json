@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hello-world",
+  "title": "Hello World",
+  "description": "A simple hello world component to verify the registry works.",
+  "registryDependencies": [
+    "button",
+    "card"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/hello-world/hello-world.tsx",
+      "content": "import { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\n\nexport function HelloWorld() {\n  return (\n    <Card className=\"w-full max-w-sm\">\n      <CardHeader>\n        <CardTitle>Hello from vui</CardTitle>\n        <CardDescription>\n          Your registry is working correctly.\n        </CardDescription>\n      </CardHeader>\n      <CardContent>\n        <Button className=\"w-full\">Get Started</Button>\n      </CardContent>\n    </Card>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

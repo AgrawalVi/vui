@@ -11,7 +11,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "Read(//private/tmp/**)",
       "Bash(gh api:*)",
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Bash(pnpm registry:build:*)"
     ]
   }
 }
