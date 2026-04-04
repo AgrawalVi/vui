@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "vui",
-  "homepage": "https://vui-registry.vercel.app",
+  "homepage": "https://vui.vishrut.tech",
   "items": [
     {
       "name": "hello-world",
