@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Josefin_Sans, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { SiteHeader } from "@/components/site-header";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
 const nunitoSans = Nunito_Sans({ subsets: ["latin"], variable: "--font-sans" });
@@ -40,7 +39,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <TooltipProvider>
-          <SiteHeader />
           <main className="flex-1">{children}</main>
         </TooltipProvider>
       </body>
