@@ -3,6 +3,7 @@ import { GITHUB_URL } from "@/constants";
 import Link from "next/link";
 import { Github } from "../../../registry/logos/github";
 import { SiteLogo } from "../shared/site-logo";
+import { ThemeToggle } from "../shared/theme-toggle";
 
 export function SiteHeader() {
   return (
@@ -18,6 +19,7 @@ export function SiteHeader() {
           <Button variant="ghost" size="sm" asChild>
             <Link href="/docs/components">Components</Link>
           </Button>
+          <ThemeToggle />
           <Button variant="ghost" size="icon" asChild>
             <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
               <Github data-icon="inline-start" />
