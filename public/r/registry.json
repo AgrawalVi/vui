@@ -11,7 +11,7 @@
       "registryDependencies": ["button", "card"],
       "files": [
         {
-          "path": "registry/new-york/hello-world/hello-world.tsx",
+          "path": "registry/hello-world/hello-world.tsx",
           "type": "registry:component"
         }
       ]

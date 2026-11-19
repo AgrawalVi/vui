@@ -1,0 +1,58 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Terminal } from "lucide-react";
+import { Github } from "../../../registry/logos/github";
+import Link from "next/link";
+import { GITHUB_URL } from "@/constants";
+
+export function HeroSection() {
+  return (
+    <section className="relative overflow-hidden border-b">
+      <div className="mx-auto flex max-w-5xl flex-col gap-8 px-6 py-24">
+        <div className="flex flex-col gap-5 max-w-2xl">
+          <Badge variant="secondary" className="w-fit">
+            One source of truth
+          </Badge>
+          <h1
+            className="text-5xl font-semibold tracking-tight leading-[1.1]"
+            style={{ fontFamily: "var(--font-josefin-sans)" }}
+          >
+            Stop copying components
+            <br />
+            between <span className="text-primary">projects.</span>
+          </h1>
+          <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
+            A personal collection of components built on shadcn/ui — auth
+            integrations, form utilities, providers, and more. One place, always
+            up to date, copy into any project.
+          </p>
+        </div>
+        <div className="flex items-center gap-3 flex-wrap">
+          <Button asChild>
+            <a href="/docs/components">
+              Browse Components
+              <ArrowRight data-icon="inline-end" />
+            </a>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+              <Github data-icon="inline-start" />
+              View on GitHub
+            </Link>
+          </Button>
+        </div>
+        <div className="flex items-center gap-3 rounded-lg border bg-muted px-4 py-3 w-fit max-w-full overflow-x-auto">
+          <Terminal className="size-4 text-muted-foreground shrink-0" />
+          <code className="font-mono text-sm whitespace-nowrap">
+            <span className="text-muted-foreground">
+              npx shadcn@latest add{" "}
+            </span>
+            <span className="text-foreground">
+              https://vui.vishrut.tech/r/[component]
+            </span>
+          </code>
+        </div>
+      </div>
+    </section>
+  );
+}
